@@ -22,5 +22,17 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
+<script type="module">
+  import React from "react";
+  import { createRoot } from "react-dom/client";
+
+  const App = () => (
+    <div style={{ padding: "40px", fontSize: "24px" }}>
+      문화감수성 테스트 페이지 정상 출력 중 ✅
+    </div>
+  );
+
+  createRoot(document.getElementById("root")).render(<App />);
+</script>
 </body>
 </html>
